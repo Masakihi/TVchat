@@ -1,0 +1,5 @@
+<p>新しい投稿をする</p>
+<%= form_tag("/create/#{@page.id}") do %>
+  <input name="content">
+  <input type="submit">
+<% end %>

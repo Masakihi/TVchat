@@ -1,0 +1,8 @@
+<h2>ホーム画面です</h2>
+<%= link_to("チャットルームの新規作成", "/page/new") %>
+<p>チャットルーム一覧</p>
+<% @pages.each do |page| %>
+<p>
+<%= link_to(page.name, "/chatroom/#{page.id}") %>
+</p>
+<% end %>
